@@ -28,6 +28,7 @@ const SendEmail = () => {
 
       console.log(res.data);
       setMsg(res.data.resMsg);
+      setUser({to: '', sub: '', desc: ''})
     } catch (err) {
       console.log(err);
     }
